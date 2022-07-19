@@ -63,6 +63,6 @@ public abstract class Personagem {
                 ", resistencia = " + resistencia +
                 ", destreza = " + destreza +
                 ", dano ataque = " + String.format("%.2f", getDanoAtaque()) +
-                '}';
+                ' }';
     }
 }
