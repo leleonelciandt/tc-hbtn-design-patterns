@@ -52,17 +52,14 @@ public abstract class Personagem {
         this.nome = nome;
     }
 
-    @Override
+       @Override
     public String toString() {
-        return "Personagem{" +
-                " nome = '" + nome + '\'' +
-                ", tipo = " + tipo +
+        return "Personagem { " +
+                "nome = " + nome + ", tipo = " + tipo +
                 ", inteligencia = " + inteligencia +
-                ", forca = " + forca +
-                ", vigor = " + vigor +
-                ", resistencia = " + resistencia +
-                ", destreza = " + destreza +
+                ", forca = " + forca + ", vigor = " + vigor +
+                ", resistencia = " + resistencia + ", destreza = " + destreza +
                 ", dano ataque = " + String.format("%.2f", getDanoAtaque()) +
-                ' }';
+                " }";
     }
 }
