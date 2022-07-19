@@ -2,9 +2,9 @@ public abstract class Personagem {
 
     private String nome;
     private TipoPersonagem tipo;
-    private Integer inteligencia, forca, vigor, resistencia, destreza;
+    private int inteligencia, forca, vigor, resistencia, destreza;
 
-    public Personagem(String nome, TipoPersonagem tipo, Integer inteligencia, Integer forca, Integer vigor, Integer resistencia, Integer destreza) {
+    public Personagem(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         this.nome = nome;
         this.tipo = tipo;
         this.inteligencia = inteligencia;
@@ -14,37 +14,35 @@ public abstract class Personagem {
         this.destreza = destreza;
     }
 
-    public Integer getInteligencia() {
+    public int getInteligencia() {
         return inteligencia;
     }
 
-    public void setInteligencia(Integer inteligencia) {
+    public void setInteligencia(int inteligencia) {
         this.inteligencia = inteligencia;
     }
 
-    public void setForca(Integer forca) {
+    public void setForca(int forca) {
         this.forca = forca;
     }
 
-    public Integer getDestreza() {
+    public int getDestreza() {
         return destreza;
     }
 
-    public void setDestreza(Integer destreza) {
+    public void setDestreza(int destreza) {
         this.destreza = destreza;
     }
 
-    public Integer getVigor() {
+    public int getVigor() {
         return vigor;
     }
 
-    public Integer getForca() {
+    public int getForca() {
         return forca;
     }
 
-    public double getDanoAtaque(){
-        return getForca();
-    }
+    public abstract double getDanoAtaque();
 
     public String getNome() {
         return nome;

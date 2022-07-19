@@ -3,7 +3,7 @@ public class Mago extends Personagem {
 
 
 
-    public Mago(String nome, Integer inteligencia, Integer forca, Integer vigor, Integer resistencia, Integer destreza) throws Exception {
+    public Mago(String nome, int inteligencia, int forca, int vigor, int resistencia, int destreza) throws Exception {
         super(nome, TipoPersonagem.MAGO, inteligencia, forca, vigor, resistencia, destreza);
         if (inteligencia < forca || inteligencia < destreza){
             throw new RuntimeException("Atributos invalidos para MAGO");
