@@ -36,11 +36,7 @@ public class ItemPedido {
         ItemPedido that = (ItemPedido) o;
         return tipo == that.tipo && nome.equals(that.nome);
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(tipo, nome);
-    }
+    
 
     @Override
     public String toString() {
