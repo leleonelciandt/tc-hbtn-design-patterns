@@ -1,8 +1,13 @@
 public class Impressao {
 
-    private int paginasTotais, paginasColoridas;
+    private int paginasTotais;
+    private int paginasColoridas;
     private boolean ehFrenteVerso;
-    private double valorColoridasFrenteVerso, valorPretoBrancoFrenteVerso, valorColoridasFrenteApenas, valorPretoBrancoFrenteApenas;
+    private double valorColoridasFrenteVerso;
+    private double valorPretoBrancoFrenteVerso;
+    private double valorColoridasFrenteApenas;
+    private double valorPretoBrancoFrenteApenas;
+
 
     public Impressao(int paginasTotais, int paginasColoridas, boolean ehFrenteVerso, double valorColoridasFrenteVerso, double valorPretoBrancoFrenteVerso, double valorColoridasFrenteApenas, double valorPretoBrancoFrenteApenas) {
         this.paginasTotais = paginasTotais;
