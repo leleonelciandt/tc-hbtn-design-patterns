@@ -7,36 +7,12 @@ public class Pedido {
     private HashSet<ItemPedido> itensForaCaixa = new HashSet<>();
 
 
-    public Pedido() {
-    }
-
-    public Pedido(HashSet<ItemPedido> itensDentroCaixa, HashSet<ItemPedido> itensForaCaixa) {
-        this.itensDentroCaixa = itensDentroCaixa;
-        this.itensForaCaixa = itensForaCaixa;
-    }
-
-    public HashSet<ItemPedido> getItensDentroCaixa() {
-        return itensDentroCaixa;
-    }
-
-    public void setItensDentroCaixa(HashSet<ItemPedido> itensDentroCaixa) {
-        this.itensDentroCaixa = itensDentroCaixa;
-    }
-
-    public HashSet<ItemPedido> getItensForaCaixa() {
-        return itensForaCaixa;
-    }
-
-    public void setItensForaCaixa(HashSet<ItemPedido> itensForaCaixa) {
-        this.itensForaCaixa = itensForaCaixa;
-    }
-
     public void adicionarItemDentroCaixa(ItemPedido item){
         this.itensDentroCaixa.add(item);
     }
 
     public void adicionarItemForaCaixa(ItemPedido item){
-        this.itensDentroCaixa.add(item);
+        this.itensForaCaixa.add(item);
     }
 
     @Override
