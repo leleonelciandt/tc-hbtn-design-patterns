@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class BebidaComLeite  extends BebidaDecorator {
+public class BebidaComLeite extends BebidaDecorator {
 
     public BebidaComLeite(Bebida bebidaASerDecorada) {
         super(bebidaASerDecorada);
